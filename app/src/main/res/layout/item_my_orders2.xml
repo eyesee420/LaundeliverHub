@@ -1,0 +1,74 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+     android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp"
+    app:cardCornerRadius="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview5"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/cardpay"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="@color/purple_700"
+        app:cardCornerRadius="8dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/card1"-->
+<!--        android:layout_width="25dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        app:cardCornerRadius="90dp">-->
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+
+<!--            android:src="@drawable/ic_baseline_check_circle_24"-->
+<!--           >-->
+
+<!--        </ImageView>-->
+<!--    </androidx.cardview.widget.CardView>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="50dp"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/v1"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/status"></View>
+        <View
+            android:id="@+id/vv"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+
+            android:background="@color/white"></View>
+        <View
+            android:id="@+id/v2"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/status"></View>
+    </LinearLayout>
+
+
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,314 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview5"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+        android:layout_below="@+id/cardpay"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="#F7A6B1"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="laundry shop name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="shop location"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="26dp"
+                android:text="Payment Method"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Delivery Method"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="Total Amount"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Track Order Status"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="23dp"
+                android:text="____price____"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/shop_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shop_name"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="8dp"
+                android:text="____price____"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="96dp"
+                android:text="____price____"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/delivery_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payment_method"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="8dp"
+                android:text="____price____"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delivery_method"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="8dp"
+                android:text="____price____"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+
+                android:id="@+id/order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_amount"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="8dp"
+                android:text="status"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="23dp"
+            android:text="date and time"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+
+            android:textStyle="bold"></TextView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="30dp"
+            android:background="#ffffff"></View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="5dp"
+            android:background="#ffffff"></View>
+
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_baseline_article_24"></Button>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="3dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:text="rider on the way"
+                android:textSize="7dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></Button>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:text="shop recieved"
+                android:textSize="7dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn3"
+                app:layout_constraintStart_toEndOf="@+id/btn1"
+                app:layout_constraintTop_toTopOf="parent"></Button>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:text="laundry complete"
+                android:textSize="7dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn4"
+                app:layout_constraintStart_toEndOf="@+id/btn2"
+                app:layout_constraintTop_toTopOf="parent"></Button>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:text="Items on Delivery"
+                android:textSize="7dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn5"
+                app:layout_constraintStart_toEndOf="@+id/btn3"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </Button>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:text="order complete"
+                android:textSize="7dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn4"
+                app:layout_constraintTop_toTopOf="parent"></Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.cardview.widget.CardView>

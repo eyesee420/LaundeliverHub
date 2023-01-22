@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_users_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home">
+    </item>
+
+
+    <item
+        android:id="@+id/nav_users_Stores"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_storefront_24"
+        android:title="Stores">
+    </item>
+
+    <item
+        android:id="@+id/nav_order_details"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="View Cart"
+     >
+    </item>
+
+    <item
+        android:id="@+id/nav_track_order"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:title="Order Status">
+    </item>
+
+
+
+
+
+</menu>

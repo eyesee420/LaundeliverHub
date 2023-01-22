@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="users_bottom_nav.users_home">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="LAUNDELIVER"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="4dp"
+            app:cardBackgroundColor="#1E88E5"
+            app:cardCornerRadius="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/ic_baseline_person_"></ImageView>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_nav"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="12dp"
+                android:text="Hello users name  "
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"></TextView>
+
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/full_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:background="@android:color/white"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="8"
+                app:iss_delay="0"
+                app:iss_error_image="@color/purple_700"
+                app:iss_period="2000"
+                app:iss_placeholder="@android:color/darker_gray">
+
+            </com.denzcoskun.imageslider.ImageSlider>
+
+
+            <TextView
+                android:id="@+id/deals"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/image_slider"
+                android:layout_marginTop="10dp"
+                android:text="Great Deals of Services"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deals"
+                android:layout_marginTop="10dp"
+                android:background="#F5F5F5">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="90dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/w3">
+
+                    </ImageView>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="90dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView3"
+                    app:layout_constraintStart_toEndOf="@+id/cardView1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/w2"></ImageView>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="90dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardView4"
+                    app:layout_constraintStart_toEndOf="@+id/cardView2"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/w6"></ImageView>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="90dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/w1"></ImageView>
+
+                    >
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cons"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                app:cardBackgroundColor="#1E88E5"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="HOW DOES IT WORK ?"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"></TextView>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/white"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+
+                    <TextView
+                        android:id="@+id/tx1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="STEP 1: Choose and select your preferred  Laundry shop located at the store module below."
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tx2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tx1"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="STEP 2: Select your desired service with an option to add a separate or personal note and choose add to cart"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tx3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tx2"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="STEP 3: Select view cart and check for your chosen service and choose your payment method located at order confirmation module"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tx4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tx3"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="STEP 4: Once confirmation of your desired service is done. You can track and check the status of your chosen service at the Track Order page"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"></TextView>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/pikupdel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card2"
+                android:layout_marginTop="20dp"
+                android:text="PICKUP AND DELIVERY"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pikupdel"
+                android:layout_marginTop="10dp"
+                android:background="#F5F5F5">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewc1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="4dp"
+                    app:cardCornerRadius="90dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardViewp1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="14dp"
+                        android:background="@drawable/w4"
+                        android:scaleType="centerInside">
+
+                    </ImageView>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textView0"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="bottom"-->
+                <!--                    android:layout_marginStart="100dp"-->
+                <!--                    android:layout_marginEnd="20dp"-->
+                <!--                    android:layout_marginBottom="1dp"-->
+                <!--                    android:text="Pick up "-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"-->
+                <!--                    android:textSize="14dp"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toStartOf="@+id/textView9"-->
+
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    tools:ignore="RtlCompat"></TextView>-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewp1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="4dp"
+                    app:cardCornerRadius="90dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardViewc1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="11dp"
+                        android:background="@drawable/casondeli"
+                        android:scaleType="centerInside"></ImageView>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/textView9"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="bottom"-->
+                <!--                    android:layout_marginStart="50dp"-->
+                <!--                    android:layout_marginEnd="60dp"-->
+                <!--                    android:text="Pick up and Delivery"-->
+                <!--                    android:textAlignment="center"-->
+                <!--                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"-->
+                <!--                    android:textSize="14dp"-->
+                <!--                    android:textStyle="bold"-->
+                <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toEndOf="@+id/textView0"-->
+                <!--                    tools:ignore="RtlCompat"></TextView>-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cons4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cons3"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                app:cardBackgroundColor="#1E88E5"
+                app:cardCornerRadius="8dp">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/white"></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="PICKUP DELIVERY METHODS"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"></TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+
+                    <TextView
+                        android:id="@+id/txp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="PICKUP - For pickup orders we can get your laundry items to your home and chose to pickup later in laundry shop"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/txd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="PICKUP AND DELIVERY - We can pickup and deliver your laundry items straight to your doorstep"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"></TextView>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cons4"
+                android:layout_marginTop="20dp"
+                android:text="We Offer Convenient Payment Methods"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cons2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/offer"
+                android:layout_marginTop="20dp"
+                android:background="#F5F5F5">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="4dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardViewp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewc"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/cod">
+
+                    </ImageView>
+
+
+                </androidx.cardview.widget.CardView>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView7"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="bottom"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:layout_marginBottom="1dp"-->
+<!--                    android:text="Cash on Delivery"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toStartOf="@+id/textView8"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/cardViewc"-->
+<!--                    tools:ignore="RtlCompat"></TextView>-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="4dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardViewc"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/gcash"
+                        android:scaleType="centerInside"></ImageView>
+
+
+                </androidx.cardview.widget.CardView>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView8"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="bottom"-->
+<!--                    android:layout_marginStart="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:text="Gcash Payments"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"-->
+<!--                    android:textSize="14dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/textView7"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/cardViewp"-->
+<!--                    tools:ignore="RtlCompat"></TextView>-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cons5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cons2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:cardBackgroundColor="#1E88E5"
+        app:cardCornerRadius="8dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="PAYMENT METHODS"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/txc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="CASH ON DELIVERY - You can pay thru cash on delivery when your laundry items arrived to your home "
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:id="@+id/txg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txc"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="GCASH PAYMENT - We accept Gcash payment by Scan Qr Code or Send thru our Gcash number"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:id="@+id/txi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txg"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="IMPORTANT NOTE : Payment  via Gcash needs to attach a confirmation by sending a screenshot of proof of payment on the order page menu."
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"></TextView>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/terms_condi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cons5"
+                android:layout_marginTop="20dp"
+                android:text="Terms and Condtions"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/grey_font"
+                android:textSize="12dp"
+                android:autoLink="none"
+                android:textStyle="bold"></TextView>
+
+<View
+    android:layout_below="@+id/terms_condi"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="10dp"
+    android:background="#F5F5F5"></View>
+
+            <TextView
+                android:id="@+id/contactus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/terms_condi"
+                android:layout_marginTop="15dp"
+                android:text="CONTACT US"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textSize="14dp"
+                android:textStyle="bold"></TextView>
+
+
+            <LinearLayout
+                android:id="@+id/conscontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contactus"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="80dp"
+
+                android:gravity="center"
+
+                >
+
+                <ImageView
+                    android:id="@+id/gmail"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/icon_gmail">
+
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/icn_facebook">
+
+                </ImageView>
+
+
+                <ImageView
+                    android:id="@+id/phn"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/icon_phone">
+
+                </ImageView>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"
+        android:layout_above="@+id/bottom_navigation_users"></View>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:itemIconTint="@drawable/navigation_view_colored"
+
+        app:itemTextColor="@drawable/navigation_view_colored"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/users_nav_items"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="2dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            app:cardBackgroundColor="@android:color/darker_gray"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            app:cardCornerRadius="6dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="4dp">
+            <ImageView
+                android:id="@+id/shop_imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_image_24">
+            </ImageView>
+</androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:id="@+id/shop_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/card1"
+            android:paddingStart="15dp"
+            android:text="yawa laundry shop"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/namextx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shop_name_txt"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/card1"
+            android:paddingStart="15dp"
+            android:text="Laundry Shop Name"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/grey_font"
+            android:textSize="12dp"
+
+            ></TextView>
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/namextx"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="12dp"
+            android:background="@android:color/darker_gray"></View>
+
+        <TextView
+            android:id="@+id/shop_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            android:layout_alignParentEnd="true"
+
+            android:layout_toRightOf="@+id/card1"
+            android:paddingStart="15dp"
+            android:text="# oracle central bicutan taguig city"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+
+            android:textSize="14dp">
+
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/ttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shop_location"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toRightOf="@id/card1"
+            android:paddingStart="15dp"
+            android:text="Laundry Shop Location"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="12dp"
+            android:textColor="@color/grey_font"
+            tools:ignore="RtlCompat"></TextView>
+
+        <View
+            android:id="@+id/v2"
+            android:layout_below="@+id/ttt"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="115dp"
+            android:layout_marginEnd="12dp"
+            android:background="@android:color/darker_gray"></View>
+
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v2"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/card1"
+            android:text="Total Amount"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v2"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/t3"
+            android:text="____price____"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="14dp"></TextView>
+
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingStart="15dp"
+            android:text="date and time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="14dp"
+            android:textStyle="bold"></TextView>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            app:backgroundTint="@color/red_500"
+            android:background="@drawable/ic_baseline_delete_24"></Button>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

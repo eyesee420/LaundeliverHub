@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".profile_page">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1E88E5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update your profile"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/top_nav"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="90dp"
+        android:background="@android:color/darker_gray">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/profile_logo"
+        ></ImageView>
+
+</androidx.cardview.widget.CardView>
+>
+    <EditText
+        android:id="@+id/txt_full_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="13dp"
+        android:hint="Full Name"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="16dp"></EditText>
+
+    <EditText
+        android:id="@+id/txt_phone_number"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_full_name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="13dp"
+        android:hint="Phone Number"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="16dp"
+        android:inputType="phone"></EditText>
+
+    <EditText
+        android:id="@+id/txt_current_address"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_phone_number"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_home_24"
+        android:drawablePadding="13dp"
+        android:hint="Current Address"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="16dp"></EditText>
+
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_current_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_curve"
+        android:padding="2dp"
+        android:text="Update Account"
+        app:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:textStyle="bold"></Button>
+
+    <Button
+        android:id="@+id/log_out_btn"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_curve_cancel"
+        android:padding="2dp"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+       ></Button>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:SpinKit_Color="@color/purple_700"></com.github.ybq.android.spinkit.SpinKitView>
+
+
+</RelativeLayout>

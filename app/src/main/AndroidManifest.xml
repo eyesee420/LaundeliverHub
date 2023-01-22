@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.laundeliverhub">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_banner"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_banner"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LaundeliverHub"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme,android:icon"
+        tools:targetApi="31">
+        <activity
+            android:name=".shopOwner_profile"
+            android:exported="false" />
+        <activity
+            android:name=".shopOwner_register_page"
+            android:exported="false" />
+        <activity
+            android:name=".shopOwner_home"
+            android:exported="false" />
+        <activity
+            android:name=".shopOwners_login_page"
+            android:exported="false" />
+        <activity
+            android:name=".admin_completed_orders_final"
+            android:exported="false" />
+        <activity
+            android:name="admin_bottom_nav.admin_completed_orders"
+            android:exported="false" />
+        <activity
+            android:name=".terms_and_conditions"
+            android:exported="false" />
+        <activity
+            android:name=".admin_register_page"
+            android:exported="false" />
+        <activity
+            android:name=".admin_myShop_update"
+            android:exported="false" />
+        <activity
+            android:name=".my_orders_final_admin"
+            android:exported="false" />
+        <activity
+            android:name=".my_orders_final"
+            android:exported="false" />
+        <activity
+            android:name=".profile_page"
+            android:exported="false" />
+        <activity
+            android:name=".forgot_password_page"
+            android:exported="false" />
+        <activity
+            android:name=".admin_profile_page"
+            android:exported="false" />
+        <activity
+            android:name=".admin_login_page"
+            android:exported="false" />
+        <activity
+            android:name=".register_page"
+            android:exported="false" />
+        <activity
+            android:name=".confirm_orders"
+            android:exported="false" />
+        <activity
+            android:name="users_bottom_nav.users_view_orders"
+            android:exported="false" />
+        <activity
+            android:name=".add_cart"
+            android:exported="false" />
+        <activity
+            android:name="users_bottom_nav.users_stores"
+            android:exported="false" />
+        <activity
+            android:name="users_bottom_nav.users_order_details"
+            android:exported="false" />
+        <activity
+            android:name="users_bottom_nav.users_home"
+            android:exported="false" />
+        <activity
+            android:name="admin_bottom_nav.admin_customersOrders"
+            android:exported="false" />
+        <activity
+            android:name="admin_bottom_nav.admin_addProducts"
+            android:exported="false" />
+        <activity
+            android:name="admin_bottom_nav.admin_home"
+            android:exported="false" />
+        <activity
+            android:name="admin_bottom_nav.admin_myShop"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".splash_screen" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".splash_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

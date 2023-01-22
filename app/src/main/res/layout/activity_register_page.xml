@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_page">
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="23dp"
+                app:cardBackgroundColor="@color/purple_700"
+
+                app:cardCornerRadius="22dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="4dp"
+
+                    app:cardCornerRadius="23dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/logo_banner"></ImageView>
+
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/card2"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="13dp"
+                android:hint="Full Name"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="16dp"></EditText>
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/full_name"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_phone_android_24"
+                android:drawablePadding="13dp"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="16dp"></EditText>
+
+            <EditText
+                android:id="@+id/current_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/phone_number"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_home_24"
+                android:drawablePadding="13dp"
+                android:hint="Current Address"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="16dp"></EditText>
+
+            <EditText
+                android:id="@+id/email_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/current_address"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/email_icon"
+                android:drawablePadding="13dp"
+                android:hint="Email address"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="16dp"></EditText>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password_registerS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_address"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/custom_password_focus"
+                    android:drawablePadding="13dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="16dp"></com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <Button
+                            android:id="@+id/register_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/password_registerS"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="35dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="160dp"
+                            android:background="@drawable/btn_curve_blue"
+                            android:padding="2dp"
+                            android:text="Create Account"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"></Button>
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card2"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                app:SpinKit_Color="@color/purple_700" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    </RelativeLayout>

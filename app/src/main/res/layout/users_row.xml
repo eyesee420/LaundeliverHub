@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    app:cardBackgroundColor="@android:color/darker_gray"
+    app:cardCornerRadius="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardpay"
+            app:cardBackgroundColor="@color/white"
+            android:layout_margin="2dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Full name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    android:textSize="14dp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Home Address"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    android:textSize="14dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Phone Number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    android:textSize="14dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Email Address"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    android:textSize="14dp"
+                    android:textStyle="bold"></TextView>
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:text="____price____"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    android:textSize="14dp"
+                  ></TextView>
+
+                <TextView
+                    android:id="@+id/currentaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fullname"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:text="____price____"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    android:textSize="14dp"
+                ></TextView>
+
+                <TextView
+                    android:id="@+id/phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/currentaddress"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:text="____price____"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    android:textSize="14dp"
+              ></TextView>
+
+                <TextView
+                    android:id="@+id/emailaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phonenumber"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:text="____price____"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                  ></TextView>
+
+
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_baseline_delete_24"
+                    app:backgroundTint="@color/colorAccent"></Button>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

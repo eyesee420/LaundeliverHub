@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_completed_orders_final">
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cards_users"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="30dp"
+                app:cardBackgroundColor="#1E88E5"
+                app:cardCornerRadius="23dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/txt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Laundry Store"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                        android:textColor="#ffff"
+                        android:textSize="18dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="23dp"
+                            android:text="Shop Name "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Shop Location"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="268dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="1dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shop_name_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:layout_marginTop="23dp"
+                            android:text="shop name"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/shop_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/shop_name_txt"
+                            android:layout_marginLeft="65dp"
+                            android:layout_marginTop="8dp"
+                            android:text="shop location"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/viw1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txt1"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="#ffffff"></View>
+
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viw1"
+                        android:layout_marginTop="12dp"
+                        android:text="Delivery information"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt2"
+                        android:layout_alignParentStart="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="23dp"
+                            android:text="Full Name "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Phone Number"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Home Address"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="258dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+
+                        android:layout_marginRight="1dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/fullname_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="65dp"
+                            android:layout_marginTop="23dp"
+                            android:text="ian christopher icaonapo"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/phonenumber_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fullname_txt"
+                            android:layout_marginLeft="65dp"
+                            android:layout_marginTop="9dp"
+                            android:text="09277454050"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/homeaddress_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/phonenumber_txt"
+                            android:layout_marginLeft="65dp"
+                            android:layout_marginTop="8dp"
+                            android:text="#5 zone2 central bicutan taguig citty"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/viw2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txt2"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="#ffffff"></View>
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viw2"
+                        android:layout_marginTop="12dp"
+                        android:text="orders receipt"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <TextView
+                        android:id="@+id/date_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt3"
+                        android:layout_marginTop="12dp"
+                        android:text="date and time"
+                        android:textAlignment="textStart"
+                        android:paddingStart="34dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt3"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="18dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="23dp"
+                            android:text="Laundry Price"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Detergent"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Softener"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Bleach"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Iron/Fold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Delivery Charge"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Total Amount"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <!--        <TextView-->
+                        <!--            android:layout_width="wrap_content"-->
+                        <!--            android:layout_height="wrap_content"-->
+                        <!--            android:layout_marginLeft="35dp"-->
+                        <!--            android:layout_marginTop="8dp"-->
+                        <!--            android:text="Discriptions"-->
+                        <!--            android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                        <!--            android:textColor="#ffffff"-->
+                        <!--            android:textSize="14dp"-->
+                        <!--            android:textStyle="bold"></TextView>-->
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="148dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="0dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/laundry_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="23dp"
+                            android:text="____price____"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/detergent_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/laundry_price"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="____price____"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/softener_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/detergent_txt"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="____price____"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/bleach_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/softener_txt"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="____price____"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <TextView
+                            android:id="@+id/iron_fold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/bleach_txt"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="____price____"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/delivery_charge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iron_fold"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="____price____ "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <TextView
+                            android:id="@+id/total_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/delivery_charge"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="____price____"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <!--        <TextView-->
+                        <!--            android:id="@+id/discription_txt"-->
+                        <!--            android:layout_width="wrap_content"-->
+                        <!--            android:layout_height="wrap_content"-->
+                        <!--            android:layout_below="@id/total_amount"-->
+                        <!--            android:layout_marginLeft="35dp"-->
+                        <!--            android:layout_marginTop="8dp"-->
+                        <!--            android:text="discriptions"-->
+                        <!--            android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                        <!--            android:textColor="#ffffff"-->
+                        <!--            android:textSize="14dp"-->
+                        <!--            android:textStyle="bold"></TextView>-->
+
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:id="@+id/viw4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txt3"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="240dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="#ffffff"></View>
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viw4"
+                        android:layout_marginTop="12dp"
+                        android:text="Payments and Delivery Methods"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt4"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Payment Method"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Delivery Method"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <!--                <TextView-->
+                        <!--                    android:layout_width="wrap_content"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:layout_marginLeft="35dp"-->
+                        <!--                    android:layout_marginTop="8dp"-->
+                        <!--                    android:text="Discriptions"-->
+                        <!--                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                        <!--                    android:textColor="#ffffff"-->
+                        <!--                    android:textSize="14dp"-->
+                        <!--                    android:textStyle="bold"></TextView>-->
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="12dp"
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt4"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_marginRight="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/payment_method"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="payment_method"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/delivery_method"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/payment_method"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginTop="8dp"
+                            android:text="delivery_method"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#ffffff"
+                            android:textSize="14dp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <!--                <TextView-->
+                        <!--                    android:id="@+id/discription_txt"-->
+                        <!--                    android:layout_width="wrap_content"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:layout_below="@id/delivery_method"-->
+                        <!--                    android:layout_marginLeft="35dp"-->
+                        <!--                    android:layout_marginTop="8dp"-->
+                        <!--                    android:text="discriptions"-->
+                        <!--                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+                        <!--                    android:textColor="#ffffff"-->
+                        <!--                    android:textSize="14dp"-->
+                        <!--                    android:textStyle="bold"></TextView>-->
+
+
+                    </RelativeLayout>
+                    <View
+                        android:id="@+id/viw6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txt4"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="#ffffff"></View>
+
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viw6"
+                        android:layout_marginTop="12dp"
+                        android:text="Track Orders Status"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <TextView
+                        android:id="@+id/order_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt6"
+                        android:layout_marginTop="8dp"
+                        android:text="orders status"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#ffffff"
+                        android:textSize="14dp"></TextView>
+
+
+                    <View
+                        android:id="@+id/viw5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/txt6"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="#ffffff"></View>
+
+
+                    <TextView
+                        android:id="@+id/txt5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viw5"
+                        android:layout_marginTop="12dp"
+                        android:text="Special instructions"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/discription_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_below="@id/txt5"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/custom_input"
+                        android:gravity="center"
+                        android:text="discriptions"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtG"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/discription_txt"
+                        android:text="Image bellow is for gcash payments"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:id="@+id/image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:visibility="gone"
+                        android:layout_below="@+id/txtG"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="23dp"
+                        android:layout_marginBottom="23dp"
+                        android:background="@android:color/darker_gray"
+                        android:scaleType="centerCrop"></ImageView>
+
+
+                    <Button
+                        android:id="@+id/btn_order_delete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image_view"
+                        android:text="delete order"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:textColor="@color/colorAccent"
+                        android:background="@drawable/btn_curve_white"
+                        android:layout_marginBottom="20dp"></Button>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

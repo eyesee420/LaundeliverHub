@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="users_bottom_nav.users_stores">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="LAUNDRY SHOPS "
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/search_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/ic_baseline_search_24"
+            android:layout_marginStart="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_info"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ToggleButton>
+
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:backgroundTint="@color/purple_700"
+            android:background="@drawable/ic_baseline_info_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:visibility="gone"
+        android:focusable="true"
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_nav"
+        android:autofillHints="postalAddress"
+        app:defaultQueryHint="Search Laundry Shops Locations"
+        app:queryHint="Search Laundry Shops Locations">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation_users"
+        android:layout_below="@+id/searchView">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"
+        android:layout_above="@+id/bottom_navigation_users"></View>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:itemIconTint="@drawable/navigation_view_colored"
+        app:itemTextColor="@drawable/navigation_view_colored"
+        app:labelVisibilityMode="labeled"
+
+
+        app:menu="@menu/users_nav_items"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

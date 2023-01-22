@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="#757575"
+        app:cardCornerRadius="12dp">
+
+        <ImageView
+            android:id="@+id/shop_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_baseline_image_24"></ImageView>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/shop_name_edittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/card1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_input"
+        android:hint="Enter LaundryShop Name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/laundry_location_edittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/shop_name_edittxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_input"
+        android:hint="Enter LaundryShop Location"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/laundry_location_edittxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:cardBackgroundColor="#1E88E5"
+        app:cardCornerRadius="12dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wash Dry"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="#ffffff"
+            android:textSize="23dp"
+            android:textStyle="bold"></com.google.android.material.textview.MaterialTextView>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="3dp"
+                android:text="4-6 kilos"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="18dp"
+                android:text="6-8 kilos"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="18dp"
+                android:text="8-10 kilos"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="15dp"
+                android:text="10-12 kilos"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="15dp"
+                android:text="12-15 kilos"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/washdry_kilo1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="25dp"
+                android:inputType="number"
+                android:background="@drawable/custom_input"
+                android:hint="Price"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"></com.google.android.material.textfield.TextInputEditText>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/washdry_kilo2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/custom_input"
+                android:hint="Price"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"></com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/washdry_kilo3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/custom_input"
+                android:hint="Price"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"></com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/washdry_kilo4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:inputType="number"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/custom_input"
+                android:hint="Price"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"></com.google.android.material.textfield.TextInputEditText>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/washdry_kilo5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:inputType="number"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/custom_input"
+                android:hint="Price"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"></com.google.android.material.textfield.TextInputEditText>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

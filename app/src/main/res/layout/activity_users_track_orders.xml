@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="users_bottom_nav.users_view_orders">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="MY ORDERS"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:backgroundTint="@color/purple_700"
+            android:background="@drawable/ic_baseline_info_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_nav"
+        android:layout_above="@+id/bottom_navigation_users"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_nav"
+
+        android:layout_centerInParent="true"
+        android:src="@drawable/empty_orders"></ImageView>
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_nav"
+        android:text="Your Orders is Empty"
+        android:textAlignment="center"
+        android:layout_marginTop="360dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        android:textStyle="bold"
+        android:textSize="16dp"></TextView>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="Looks like you haven't ordered \n anything yet"
+        android:textAlignment="center"
+        android:textSize="14dp"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F5F5F5"
+        android:layout_above="@+id/bottom_navigation_users"></View>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:itemIconTint="@drawable/navigation_view_colored"
+        app:itemTextColor="@drawable/navigation_view_colored"
+        app:labelVisibilityMode="labeled"
+
+
+        app:menu="@menu/users_nav_items"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</RelativeLayout>

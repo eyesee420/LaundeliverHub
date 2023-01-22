@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="2dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="45dp"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_height="45dp"
+            app:cardCornerRadius="90dp">
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_person_">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/image_view_null"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_baseline_person_">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_above="@id/display_name"
+            android:layout_marginTop="10dp"></View>
+        <TextView
+            android:id="@+id/display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/card1"
+            android:text="Display Name"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold"></TextView>
+
+        <RatingBar
+            android:id="@+id/StarRatings"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:isIndicator="true"
+            android:max="5"
+            android:rating="3"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            android:theme="@style/MyRatingBar" />
+
+        <TextView
+            android:id="@+id/num_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/v1"
+            android:layout_marginStart="180dp"
+            android:layout_marginBottom="5dp"
+            android:text="5.0"
+            android:textStyle="bold"
+            android:textSize="12dp"></TextView>
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="10dp"
+            android:text="nov/12/12 5/23/43/pm"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="10dp"
+            android:textStyle="bold"></TextView>
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_below="@id/card1"
+            android:layout_marginTop="20dp"></View>
+
+        <TextView
+            android:id="@+id/text_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/grey_font"></TextView>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
